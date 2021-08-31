@@ -1,4 +1,89 @@
 .side-bar {
   background-color: #393a44;
   min-width: 200px;
+  margin-top: .5em;
+}
+
+.menutitle {
+  
+  text-transform: uppercase ;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: gray;
+  color: #f1f3f2;
+  font-size: 60px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background-image: url(https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGJhY2xncm91bmQlMjB3b29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+.form-label {
+  font-weight: bold;
+}
+
+html,
+#root {
+  background-color: #f1f3f2;
+}
+
+.card {
+  display: flex inline;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(3, 157, 157) ;
+  font-size: 18px;
+  border: 3px #32374b;
+  border-radius: 7px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  margin: .5em;
+  margin-bottom: .5em;
+  padding: .5em;
+ 
+}
+
+.card-header {
+  padding: 2;
+  background-color: #393a44;
+  text-transform: capitalize ;
+}
+.centertext {
+  text-align: center;
+  font-size: xx-large;
+}
+.form-select {
+  font-size: large;
+}
+
+@media (min-width: 34em) {
+  .card-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+  }
+}
+
+@media (min-width: 48em) {
+  .card-columns {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+  }
+}
+
+@media (min-width: 62em) {
+  .card-columns {
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      column-count: 4;
+  }
+}
+
+@media (min-width: 75em) {
+  .card-columns {
+      -webkit-column-count: 5;
+      -moz-column-count: 5;
+      column-count: 5;
+  }
 }
