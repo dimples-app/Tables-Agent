@@ -1,0 +1,26 @@
+[
+    {
+      "table_name": "Bar #1",
+      "capacity": 1
+    },
+    {
+      "table_name": "Bar #2",
+      "capacity": 1
+    },
+    {
+      "table_name": "Booth #1",
+      "capacity": 6
+    },
+    {
+      "table_name": "Booth #2",
+      "capacity": 6
+    },
+    {
+      "table_name": "Banquet #1",
+      "capacity": 10
+    },
+    {
+      "table_name": "Banquet #2",
+      "capacity": 10
+    }
+  ]
