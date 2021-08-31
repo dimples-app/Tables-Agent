@@ -22,5 +22,10 @@
     {
       "table_name": "Banquet #2",
       "capacity": 10
+<<<<<<< HEAD
     }
   ]
+=======
+    },
+  ]
+>>>>>>> 04df7a1378671922e608f4dc3da8b9dbf6bfcba1
