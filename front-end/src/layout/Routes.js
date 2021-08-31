@@ -13,6 +13,9 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import Dashboard from "../dashboard/Dashboard";
 import NotFound from "./NotFound";
 import { today } from "../utils/date-time";
+import Reservations from "../reservations/Reservations";
+import Tables from "../tables/Tables";
+import Search from "../search/Search";
 
 /**
  * Defines all the routes for the application.
@@ -150,19 +153,43 @@ function Routes() {
 
   return (
     <Switch>
-      <Route exact={true} path="/">
-        <Redirect to={"/dashboard"} />
-      </Route>
-      <Route exact={true} path="/reservations">
-        <Redirect to={"/dashboard"} />
-      </Route>
-      <Route path="/dashboard">
-        <Dashboard date={today()} />
-      </Route>
-      <Route>
-        <NotFound />
-      </Route>
-    </Switch>
+    <Route exact={true} path="/">
+      <Redirect to={"/dashboard"} />
+    </Route>
+    <Route path="/dashboard">
+      <Dashboard
+        errors={errors}
+        date={date}
+        handleDate={handleDate}
+        reservations={reservations}
+        tables={tables}
+        handleUnAssignTableToFinishReservation={
+          handleUnAssignTableToFinishReservation
+        }
+        handleCancelReservation={handleCancelReservation}
+      />
+    </Route>
+    <Route path="/reservations">
+      <Reservations
+        errors={errors}
+        tables={tables}
+        handleAssignTableToReservation={handleAssignTableToReservation}
+        handleNewReservation={handleNewReservation}
+        handleUpdateReservation={handleUpdateReservation}
+      />
+    </Route>
+    <Route path="/tables">
+      <Tables 
+      handleNewTable={handleNewTable} 
+      errors={errors} />
+    </Route>
+    <Route path="/search">
+      <Search />
+    </Route>
+    <Route>
+      <NotFound />
+    </Route>
+  </Switch>
   );
 }
 
