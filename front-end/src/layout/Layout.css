@@ -1,11 +1,11 @@
 .side-bar {
   background-color: #393a44;
   min-width: 200px;
-  margin-top: .5em;
+  margin-top: 1em;
+  font-size: 25px;
 }
 
 .menutitle {
-  
   text-transform: uppercase ;
 }
 .header {
@@ -13,9 +13,10 @@
   text-align: center;
   background: gray;
   color: #f1f3f2;
-  font-size: 60px;
+  font-size: 50px;
   margin-top: .5em;
   margin-bottom: .5em;
+  background-color: #393a44;
   background-image: url(https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGJhY2xncm91bmQlMjB3b29kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
   background-size: cover;
 }
@@ -32,7 +33,7 @@ html,
   display: flex inline;
   text-align: center;
   color: #ffffff;
-  background-color: rgb(3, 157, 157) ;
+  background-color: teal ;
   font-size: 18px;
   border: 3px #32374b;
   border-radius: 7px;
@@ -54,6 +55,10 @@ html,
 }
 .form-select {
   font-size: large;
+}
+
+.dashboardtitle {
+  margin-bottom: 2.5em;
 }
 
 @media (min-width: 34em) {
@@ -87,3 +92,8 @@ html,
       column-count: 5;
   }
 }
+
+.form-label {
+  font-weight: bold;
+}
+

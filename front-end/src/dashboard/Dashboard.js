@@ -17,7 +17,7 @@ function Dashboard(props) {
       </div>
   
       <div className="centertext">
-        <h2>Reservations: {props.date}</h2>
+        <h2 className="dashboardtitle">Reservations: {props.date}</h2>
         <DashboardDates date={props.date} handleDate={props.handleDate}/>
       </div>
     

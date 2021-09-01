@@ -11,7 +11,7 @@ function DashboardDates(props) {
     >
       <button
         type="button"
-        className="btn btn-outline-dark btn-lg mb-3 mr-4"
+        className="btn btn-outline-dark  btn-lg mb-3 mr-4"
         onClick={() => handleDate(previous(date))}
       >
         Previous
@@ -19,7 +19,7 @@ function DashboardDates(props) {
       
       <button
         type="button"
-        className="btn btn-success btn-lg mb-3 mr-4"
+        className="btn btn-success  btn-lg mb-3 mr-4"
         onClick={() => handleDate(today(date))}
       >
         Today
@@ -27,7 +27,7 @@ function DashboardDates(props) {
 
       <button
         type="button"
-        className="btn btn-outline-dark btn-lg mb-3 mr-4"
+        className="btn btn-outline-dark  btn-lg mb-3 mr-4"
         onClick={() => handleDate(next(date))}
       >
         Next

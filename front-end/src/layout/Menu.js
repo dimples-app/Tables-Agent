@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 /**
@@ -9,7 +8,6 @@ import { Link } from "react-router-dom";
  */
 
 function Menu() {
-  
   return (
     <nav className="navbar navbar-dark align-items-start p-0">
       <div className="container-fluid d-flex flex-column p-0">
@@ -18,7 +16,7 @@ function Menu() {
           to="/"
         >
           <div className="sidebar-brand-text mx-3">
-            <span>Tables Agent</span>
+            <span className="menutitle">Tables-Agent</span>
           </div>
         </Link>
         <hr className="sidebar-divider my-0" />
