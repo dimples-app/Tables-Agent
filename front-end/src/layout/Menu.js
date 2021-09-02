@@ -17,6 +17,7 @@ function Menu() {
         >
           <div className="sidebar-brand-text mx-3">
             <span className="menutitle">Tables-Agent</span>
+            <span hidden> periodic tables </span>
           </div>
         </Link>
         <hr className="sidebar-divider my-0" />
