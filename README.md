@@ -1,2 +1,2 @@
-# Project: Restaurant Reservation System
+# Project: Tables - Agent : Reservation of tables at restaurant.
 
